@@ -29,40 +29,24 @@ namespace SquadHub
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblNome = new System.Windows.Forms.Label();
-            this.lblIdade = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblSenha = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtIdade = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtSenha = new System.Windows.Forms.TextBox();
             this.btCadastrar = new System.Windows.Forms.Button();
             this.btVoltarTelaLogin = new System.Windows.Forms.Button();
+            this.lblNome = new System.Windows.Forms.Label();
+            this.lblConfirmacaoSenha = new System.Windows.Forms.Label();
+            this.txtConfirmacaoSenha = new System.Windows.Forms.TextBox();
+            this.dataNascimentoPicker = new System.Windows.Forms.DateTimePicker();
+            this.lblDataNascimento = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // lblNome
-            // 
-            this.lblNome.AutoSize = true;
-            this.lblNome.Location = new System.Drawing.Point(122, 79);
-            this.lblNome.Name = "lblNome";
-            this.lblNome.Size = new System.Drawing.Size(43, 15);
-            this.lblNome.TabIndex = 0;
-            this.lblNome.Text = "Nome:";
-            // 
-            // lblIdade
-            // 
-            this.lblIdade.AutoSize = true;
-            this.lblIdade.Location = new System.Drawing.Point(122, 124);
-            this.lblIdade.Name = "lblIdade";
-            this.lblIdade.Size = new System.Drawing.Size(39, 15);
-            this.lblIdade.TabIndex = 1;
-            this.lblIdade.Text = "Idade:";
             // 
             // lblEmail
             // 
             this.lblEmail.AutoSize = true;
-            this.lblEmail.Location = new System.Drawing.Point(122, 172);
+            this.lblEmail.Location = new System.Drawing.Point(123, 147);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(39, 15);
             this.lblEmail.TabIndex = 2;
@@ -71,7 +55,7 @@ namespace SquadHub
             // lblSenha
             // 
             this.lblSenha.AutoSize = true;
-            this.lblSenha.Location = new System.Drawing.Point(119, 216);
+            this.lblSenha.Location = new System.Drawing.Point(119, 193);
             this.lblSenha.Name = "lblSenha";
             this.lblSenha.Size = new System.Drawing.Size(42, 15);
             this.lblSenha.TabIndex = 3;
@@ -79,28 +63,21 @@ namespace SquadHub
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(227, 79);
+            this.txtNome.Location = new System.Drawing.Point(213, 41);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(161, 23);
             this.txtNome.TabIndex = 4;
             // 
-            // txtIdade
-            // 
-            this.txtIdade.Location = new System.Drawing.Point(227, 121);
-            this.txtIdade.Name = "txtIdade";
-            this.txtIdade.Size = new System.Drawing.Size(161, 23);
-            this.txtIdade.TabIndex = 5;
-            // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(227, 169);
+            this.txtEmail.Location = new System.Drawing.Point(213, 139);
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(161, 23);
             this.txtEmail.TabIndex = 6;
             // 
             // txtSenha
             // 
-            this.txtSenha.Location = new System.Drawing.Point(227, 213);
+            this.txtSenha.Location = new System.Drawing.Point(213, 185);
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(161, 23);
             this.txtSenha.TabIndex = 7;
@@ -125,21 +102,66 @@ namespace SquadHub
             this.btVoltarTelaLogin.UseVisualStyleBackColor = true;
             this.btVoltarTelaLogin.Click += new System.EventHandler(this.btVoltarTelaLogin_Click);
             // 
+            // lblNome
+            // 
+            this.lblNome.AutoSize = true;
+            this.lblNome.Location = new System.Drawing.Point(119, 49);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(43, 15);
+            this.lblNome.TabIndex = 10;
+            this.lblNome.Text = "Nome:";
+            // 
+            // lblConfirmacaoSenha
+            // 
+            this.lblConfirmacaoSenha.AutoSize = true;
+            this.lblConfirmacaoSenha.Location = new System.Drawing.Point(62, 251);
+            this.lblConfirmacaoSenha.Name = "lblConfirmacaoSenha";
+            this.lblConfirmacaoSenha.Size = new System.Drawing.Size(99, 15);
+            this.lblConfirmacaoSenha.TabIndex = 12;
+            this.lblConfirmacaoSenha.Text = "Confirmar Senha:";
+            // 
+            // txtConfirmacaoSenha
+            // 
+            this.txtConfirmacaoSenha.Location = new System.Drawing.Point(213, 243);
+            this.txtConfirmacaoSenha.Name = "txtConfirmacaoSenha";
+            this.txtConfirmacaoSenha.Size = new System.Drawing.Size(161, 23);
+            this.txtConfirmacaoSenha.TabIndex = 13;
+            // 
+            // dataNascimentoPicker
+            // 
+            this.dataNascimentoPicker.CustomFormat = "dd/MM/yyyy";
+            this.dataNascimentoPicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dataNascimentoPicker.Location = new System.Drawing.Point(203, 95);
+            this.dataNascimentoPicker.Name = "dataNascimentoPicker";
+            this.dataNascimentoPicker.Size = new System.Drawing.Size(252, 23);
+            this.dataNascimentoPicker.TabIndex = 14;
+            // 
+            // lblDataNascimento
+            // 
+            this.lblDataNascimento.AutoSize = true;
+            this.lblDataNascimento.Location = new System.Drawing.Point(45, 101);
+            this.lblDataNascimento.Name = "lblDataNascimento";
+            this.lblDataNascimento.Size = new System.Drawing.Size(117, 15);
+            this.lblDataNascimento.TabIndex = 15;
+            this.lblDataNascimento.Text = "Data de Nascimento:";
+            // 
             // TelaCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblDataNascimento);
+            this.Controls.Add(this.dataNascimentoPicker);
+            this.Controls.Add(this.txtConfirmacaoSenha);
+            this.Controls.Add(this.lblConfirmacaoSenha);
+            this.Controls.Add(this.lblNome);
             this.Controls.Add(this.btVoltarTelaLogin);
             this.Controls.Add(this.btCadastrar);
             this.Controls.Add(this.txtSenha);
             this.Controls.Add(this.txtEmail);
-            this.Controls.Add(this.txtIdade);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblEmail);
-            this.Controls.Add(this.lblIdade);
-            this.Controls.Add(this.lblNome);
             this.Name = "TelaCadastro";
             this.Text = "TelaCadastro";
             this.ResumeLayout(false);
@@ -148,16 +170,17 @@ namespace SquadHub
         }
 
         #endregion
-
-        private System.Windows.Forms.Label lblNome;
-        private System.Windows.Forms.Label lblIdade;
         private System.Windows.Forms.Label lblEmail;
         private System.Windows.Forms.Label lblSenha;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtIdade;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtSenha;
         private System.Windows.Forms.Button btCadastrar;
         private System.Windows.Forms.Button btVoltarTelaLogin;
+        private System.Windows.Forms.Label lblNome;
+        private System.Windows.Forms.Label lblConfirmacaoSenha;
+        private System.Windows.Forms.TextBox txtConfirmacaoSenha;
+        private System.Windows.Forms.DateTimePicker dataNascimentoPicker;
+        private System.Windows.Forms.Label lblDataNascimento;
     }
 }

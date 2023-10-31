@@ -18,7 +18,7 @@ namespace SquadHub
         private void LimparCampos()
         {
             txtNome.Clear();
-            txtIdade.Clear();
+            /*txtIdade.Clear();*/
             txtEmail.Clear();
             txtSenha.Clear();
         }
@@ -26,14 +26,42 @@ namespace SquadHub
         private void btCadastrar_Click(object sender, EventArgs e)
         {
             string nome = txtNome.Text;
-            int idade = Convert.ToInt32(txtIdade.Text);
+            /*int idade = 0;*/
             string email = txtEmail.Text;
             string senha = txtSenha.Text;
+            string confirmacaoSenha = txtConfirmacaoSenha.Text;
+
+            if (string.IsNullOrWhiteSpace(nome) || string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(senha) || string.IsNullOrWhiteSpace(confirmacaoSenha))
+            {
+                MessageBox.Show("Por favor, preencha todos os campos.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            DateTime dataNascimento = dataNascimentoPicker.Value;
+            DateTime dataAtual = DateTime.Now;
+
+            int idade = dataAtual.Year - dataNascimento.Year;
+            if (dataNascimento > dataAtual.AddYears(-idade))
+            {
+                idade--;
+            }
+
+            if (idade <= 10)
+            {
+                MessageBox.Show("Você precisa ter mais de 10 anos para se cadastrar.");
+                return;
+            }
+
+            if (senha != confirmacaoSenha)
+            {
+                MessageBox.Show("A senha e a confirmação de senha estão diferentes. Por favor, verifique!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             Usuario novoUsuario = new Usuario
             {
                 Nome = nome,
-                Idade = idade,
+                /*Idade = idade,*/
                 Email = email,
                 Senha = senha
             };
