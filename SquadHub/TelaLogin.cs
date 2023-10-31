@@ -35,8 +35,9 @@ namespace SquadHub
             string emailDigitado = txtEmailLogin.Text;
             string senhaDigitada = txtSenhaLogin.Text;
 
+            /*Instância da ListaUsuario*/
             Usuario usuarioEncontrado = ListaUsuarios.Instance.Usuarios.Find(busca => busca.Email == emailDigitado && busca.Senha == senhaDigitada);
-
+            
             if(usuarioEncontrado != null)
             {
                 int indiceUsuario = usuarioEncontrado.Indice;
