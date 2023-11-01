@@ -4,6 +4,9 @@
     <Compile Update="PublicacaoControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
+    <Compile Update="TelaCadastroComplementar.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="TelaConfiguracoes.cs">
       <SubType>Form</SubType>
     </Compile>

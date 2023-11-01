@@ -18,15 +18,14 @@ namespace SquadHub
         private void LimparCampos()
         {
             txtNome.Clear();
-            /*txtIdade.Clear();*/
             txtEmail.Clear();
             txtSenha.Clear();
+            txtConfirmacaoSenha.Clear();
         }
 
         private void btCadastrar_Click(object sender, EventArgs e)
         {
             string nome = txtNome.Text;
-            /*int idade = 0;*/
             string email = txtEmail.Text;
             string senha = txtSenha.Text;
             string confirmacaoSenha = txtConfirmacaoSenha.Text;
@@ -52,6 +51,12 @@ namespace SquadHub
                 return;
             }
 
+            if (!email.Contains("@") || !email.Contains(".com"))
+            {
+                MessageBox.Show("Insira um email válido (deve conter '@' e '.com')", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             if (senha != confirmacaoSenha)
             {
                 MessageBox.Show("A senha e a confirmação de senha estão diferentes. Por favor, verifique!", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -61,7 +66,6 @@ namespace SquadHub
             Usuario novoUsuario = new Usuario
             {
                 Nome = nome,
-                /*Idade = idade,*/
                 Email = email,
                 Senha = senha
             };
@@ -74,8 +78,8 @@ namespace SquadHub
 
             LimparCampos();
 
-            TelaLogin telaLogin = new TelaLogin();
-            telaLogin.Show();
+            TelaCadastroComplementar telaCadastroComplementar = new TelaCadastroComplementar(novoUsuario);
+            telaCadastroComplementar.Show();
             this.Hide();
         }
 
@@ -84,6 +88,16 @@ namespace SquadHub
             TelaLogin telaLogin = new TelaLogin();
             telaLogin.Show();
             this.Close();
+        }
+
+        private void btMostrarSenha_Click(object sender, EventArgs e)
+        {
+            txtSenha.UseSystemPasswordChar = !txtSenha.UseSystemPasswordChar;
+        }
+
+        private void btMostrarConfirmacaoSenha_Click(object sender, EventArgs e)
+        {
+            txtConfirmacaoSenha.UseSystemPasswordChar = !txtConfirmacaoSenha.UseSystemPasswordChar;
         }
     }
 }

@@ -67,3 +67,4 @@ C:\Users\Mateus\OneDrive\Documentos\SHVersao\ProjetoSquadHub\SquadHub\obj\Debug\
 C:\Users\Mateus\OneDrive\Documentos\SHVersao\ProjetoSquadHub\SquadHub\obj\Debug\netcoreapp3.1\SquadHub.dll
 C:\Users\Mateus\OneDrive\Documentos\SHVersao\ProjetoSquadHub\SquadHub\obj\Debug\netcoreapp3.1\SquadHub.pdb
 C:\Users\Mateus\OneDrive\Documentos\SHVersao\ProjetoSquadHub\SquadHub\obj\Debug\netcoreapp3.1\SquadHub.genruntimeconfig.cache
+C:\Users\Mateus\OneDrive\Documentos\SHVersao\ProjetoSquadHub\SquadHub\obj\Debug\netcoreapp3.1\SquadHub.TelaCadastroComplementar.resources

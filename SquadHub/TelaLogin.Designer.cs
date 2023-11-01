@@ -35,6 +35,7 @@ namespace SquadHub
             this.txtEmailLogin = new System.Windows.Forms.TextBox();
             this.txtSenhaLogin = new System.Windows.Forms.TextBox();
             this.btEntrar = new System.Windows.Forms.Button();
+            this.btMostrarSenhaLogin = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btTelaCad
@@ -78,6 +79,7 @@ namespace SquadHub
             this.txtSenhaLogin.Name = "txtSenhaLogin";
             this.txtSenhaLogin.Size = new System.Drawing.Size(142, 23);
             this.txtSenhaLogin.TabIndex = 4;
+            this.txtSenhaLogin.UseSystemPasswordChar = true;
             // 
             // btEntrar
             // 
@@ -89,11 +91,22 @@ namespace SquadHub
             this.btEntrar.UseVisualStyleBackColor = true;
             this.btEntrar.Click += new System.EventHandler(this.btEntrar_Click);
             // 
+            // btMostrarSenhaLogin
+            // 
+            this.btMostrarSenhaLogin.Location = new System.Drawing.Point(427, 129);
+            this.btMostrarSenhaLogin.Name = "btMostrarSenhaLogin";
+            this.btMostrarSenhaLogin.Size = new System.Drawing.Size(32, 29);
+            this.btMostrarSenhaLogin.TabIndex = 18;
+            this.btMostrarSenhaLogin.Text = "Ver";
+            this.btMostrarSenhaLogin.UseVisualStyleBackColor = true;
+            this.btMostrarSenhaLogin.Click += new System.EventHandler(this.btMostrarSenhaLogin_Click);
+            // 
             // TelaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btMostrarSenhaLogin);
             this.Controls.Add(this.btEntrar);
             this.Controls.Add(this.txtSenhaLogin);
             this.Controls.Add(this.txtEmailLogin);
@@ -116,6 +129,7 @@ namespace SquadHub
         private System.Windows.Forms.TextBox txtEmailLogin;
         private System.Windows.Forms.TextBox txtSenhaLogin;
         private System.Windows.Forms.Button btEntrar;
+        private System.Windows.Forms.Button btMostrarSenhaLogin;
     }
 }
 

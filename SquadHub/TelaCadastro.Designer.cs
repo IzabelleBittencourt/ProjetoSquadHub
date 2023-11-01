@@ -41,6 +41,8 @@ namespace SquadHub
             this.txtConfirmacaoSenha = new System.Windows.Forms.TextBox();
             this.dataNascimentoPicker = new System.Windows.Forms.DateTimePicker();
             this.lblDataNascimento = new System.Windows.Forms.Label();
+            this.btMostrarSenha = new System.Windows.Forms.Button();
+            this.btMostrarConfirmacaoSenha = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblEmail
@@ -81,6 +83,7 @@ namespace SquadHub
             this.txtSenha.Name = "txtSenha";
             this.txtSenha.Size = new System.Drawing.Size(161, 23);
             this.txtSenha.TabIndex = 7;
+            this.txtSenha.UseSystemPasswordChar = true;
             // 
             // btCadastrar
             // 
@@ -126,6 +129,7 @@ namespace SquadHub
             this.txtConfirmacaoSenha.Name = "txtConfirmacaoSenha";
             this.txtConfirmacaoSenha.Size = new System.Drawing.Size(161, 23);
             this.txtConfirmacaoSenha.TabIndex = 13;
+            this.txtConfirmacaoSenha.UseSystemPasswordChar = true;
             // 
             // dataNascimentoPicker
             // 
@@ -145,11 +149,33 @@ namespace SquadHub
             this.lblDataNascimento.TabIndex = 15;
             this.lblDataNascimento.Text = "Data de Nascimento:";
             // 
+            // btMostrarSenha
+            // 
+            this.btMostrarSenha.Location = new System.Drawing.Point(390, 186);
+            this.btMostrarSenha.Name = "btMostrarSenha";
+            this.btMostrarSenha.Size = new System.Drawing.Size(32, 29);
+            this.btMostrarSenha.TabIndex = 16;
+            this.btMostrarSenha.Text = "Ver";
+            this.btMostrarSenha.UseVisualStyleBackColor = true;
+            this.btMostrarSenha.Click += new System.EventHandler(this.btMostrarSenha_Click);
+            // 
+            // btMostrarConfirmacaoSenha
+            // 
+            this.btMostrarConfirmacaoSenha.Location = new System.Drawing.Point(390, 239);
+            this.btMostrarConfirmacaoSenha.Name = "btMostrarConfirmacaoSenha";
+            this.btMostrarConfirmacaoSenha.Size = new System.Drawing.Size(32, 29);
+            this.btMostrarConfirmacaoSenha.TabIndex = 17;
+            this.btMostrarConfirmacaoSenha.Text = "Ver";
+            this.btMostrarConfirmacaoSenha.UseVisualStyleBackColor = true;
+            this.btMostrarConfirmacaoSenha.Click += new System.EventHandler(this.btMostrarConfirmacaoSenha_Click);
+            // 
             // TelaCadastro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btMostrarConfirmacaoSenha);
+            this.Controls.Add(this.btMostrarSenha);
             this.Controls.Add(this.lblDataNascimento);
             this.Controls.Add(this.dataNascimentoPicker);
             this.Controls.Add(this.txtConfirmacaoSenha);
@@ -182,5 +208,7 @@ namespace SquadHub
         private System.Windows.Forms.TextBox txtConfirmacaoSenha;
         private System.Windows.Forms.DateTimePicker dataNascimentoPicker;
         private System.Windows.Forms.Label lblDataNascimento;
+        private System.Windows.Forms.Button btMostrarSenha;
+        private System.Windows.Forms.Button btMostrarConfirmacaoSenha;
     }
 }

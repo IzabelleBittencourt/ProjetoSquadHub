@@ -35,7 +35,6 @@ namespace SquadHub
             string emailDigitado = txtEmailLogin.Text;
             string senhaDigitada = txtSenhaLogin.Text;
 
-            /*Instância da ListaUsuario*/
             Usuario usuarioEncontrado = ListaUsuarios.Instance.Usuarios.Find(busca => busca.Email == emailDigitado && busca.Senha == senhaDigitada);
             
             if(usuarioEncontrado != null)
@@ -50,6 +49,11 @@ namespace SquadHub
             {
                 MessageBox.Show("Dados inválidos! Verifique se o seu Email e Senha estão corretos");
             }
+        }
+
+        private void btMostrarSenhaLogin_Click(object sender, EventArgs e)
+        {
+            txtSenhaLogin.UseSystemPasswordChar = !txtSenhaLogin.UseSystemPasswordChar;
         }
     }
 }

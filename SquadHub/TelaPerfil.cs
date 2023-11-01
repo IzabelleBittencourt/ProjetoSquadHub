@@ -28,6 +28,10 @@ namespace SquadHub
 
                 lblNomePerfil.Text = "Nome: " + usuario.Nome;
                 lblEmailPerfil.Text = "Email: " + usuario.Email;
+                lblNicknamePerfil.Text = "Nickname: " + usuario.Nickname;
+                lblBiografiaPerfil.Text = "Bio: " + usuario.Biografia;
+                boxFotoPerfil.Image = usuario.FotoPerfil;
+                boxFotoPerfil.SizeMode = PictureBoxSizeMode.Zoom;
             }
         }
 
