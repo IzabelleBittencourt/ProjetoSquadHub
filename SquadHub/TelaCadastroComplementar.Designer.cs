@@ -29,9 +29,7 @@ namespace SquadHub
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblNickname = new System.Windows.Forms.Label();
-            this.lblFotoPerfil = new System.Windows.Forms.Label();
-            this.lblBiografia = new System.Windows.Forms.Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaCadastroComplementar));
             this.txtNickname = new System.Windows.Forms.TextBox();
             this.txtBiografia = new System.Windows.Forms.TextBox();
             this.boxFotoPerfil = new System.Windows.Forms.PictureBox();
@@ -40,88 +38,79 @@ namespace SquadHub
             ((System.ComponentModel.ISupportInitialize)(this.boxFotoPerfil)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblNickname
-            // 
-            this.lblNickname.AutoSize = true;
-            this.lblNickname.Location = new System.Drawing.Point(92, 52);
-            this.lblNickname.Name = "lblNickname";
-            this.lblNickname.Size = new System.Drawing.Size(64, 15);
-            this.lblNickname.TabIndex = 0;
-            this.lblNickname.Text = "Nickname:";
-            // 
-            // lblFotoPerfil
-            // 
-            this.lblFotoPerfil.AutoSize = true;
-            this.lblFotoPerfil.Location = new System.Drawing.Point(76, 177);
-            this.lblFotoPerfil.Name = "lblFotoPerfil";
-            this.lblFotoPerfil.Size = new System.Drawing.Size(80, 15);
-            this.lblFotoPerfil.TabIndex = 1;
-            this.lblFotoPerfil.Text = "Foto de Perfil:";
-            // 
-            // lblBiografia
-            // 
-            this.lblBiografia.AutoSize = true;
-            this.lblBiografia.Location = new System.Drawing.Point(59, 302);
-            this.lblBiografia.Name = "lblBiografia";
-            this.lblBiografia.Size = new System.Drawing.Size(97, 15);
-            this.lblBiografia.TabIndex = 2;
-            this.lblBiografia.Text = "Escolha uma Bio:";
-            // 
             // txtNickname
             // 
-            this.txtNickname.Location = new System.Drawing.Point(192, 49);
+            this.txtNickname.BackColor = System.Drawing.Color.MediumOrchid;
+            this.txtNickname.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtNickname.Font = new System.Drawing.Font("Segoe UI", 33F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtNickname.ForeColor = System.Drawing.Color.White;
+            this.txtNickname.Location = new System.Drawing.Point(871, 465);
             this.txtNickname.Name = "txtNickname";
-            this.txtNickname.Size = new System.Drawing.Size(187, 23);
+            this.txtNickname.Size = new System.Drawing.Size(625, 66);
             this.txtNickname.TabIndex = 3;
             // 
             // txtBiografia
             // 
-            this.txtBiografia.Location = new System.Drawing.Point(192, 299);
+            this.txtBiografia.BackColor = System.Drawing.Color.MediumOrchid;
+            this.txtBiografia.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtBiografia.Font = new System.Drawing.Font("Segoe UI", 33F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtBiografia.ForeColor = System.Drawing.Color.White;
+            this.txtBiografia.Location = new System.Drawing.Point(871, 597);
             this.txtBiografia.Name = "txtBiografia";
-            this.txtBiografia.Size = new System.Drawing.Size(187, 23);
+            this.txtBiografia.Size = new System.Drawing.Size(625, 66);
             this.txtBiografia.TabIndex = 4;
             // 
             // boxFotoPerfil
             // 
-            this.boxFotoPerfil.Location = new System.Drawing.Point(192, 122);
+            this.boxFotoPerfil.BackColor = System.Drawing.Color.Transparent;
+            this.boxFotoPerfil.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.boxFotoPerfil.Location = new System.Drawing.Point(425, 443);
             this.boxFotoPerfil.Name = "boxFotoPerfil";
-            this.boxFotoPerfil.Size = new System.Drawing.Size(170, 136);
+            this.boxFotoPerfil.Size = new System.Drawing.Size(291, 285);
             this.boxFotoPerfil.TabIndex = 5;
             this.boxFotoPerfil.TabStop = false;
             // 
             // btCadastrar
             // 
-            this.btCadastrar.Location = new System.Drawing.Point(640, 365);
+            this.btCadastrar.BackColor = System.Drawing.Color.Transparent;
+            this.btCadastrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btCadastrar.FlatAppearance.BorderSize = 0;
+            this.btCadastrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btCadastrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btCadastrar.Location = new System.Drawing.Point(1300, 833);
             this.btCadastrar.Name = "btCadastrar";
-            this.btCadastrar.Size = new System.Drawing.Size(98, 52);
+            this.btCadastrar.Size = new System.Drawing.Size(292, 60);
             this.btCadastrar.TabIndex = 6;
-            this.btCadastrar.Text = "Cadastrar";
-            this.btCadastrar.UseVisualStyleBackColor = true;
+            this.btCadastrar.UseVisualStyleBackColor = false;
             this.btCadastrar.Click += new System.EventHandler(this.btCadastrar_Click);
             // 
             // btSelecionarImagemPerfil
             // 
-            this.btSelecionarImagemPerfil.Location = new System.Drawing.Point(400, 152);
+            this.btSelecionarImagemPerfil.BackColor = System.Drawing.Color.Transparent;
+            this.btSelecionarImagemPerfil.FlatAppearance.BorderSize = 0;
+            this.btSelecionarImagemPerfil.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btSelecionarImagemPerfil.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btSelecionarImagemPerfil.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSelecionarImagemPerfil.Location = new System.Drawing.Point(475, 736);
             this.btSelecionarImagemPerfil.Name = "btSelecionarImagemPerfil";
-            this.btSelecionarImagemPerfil.Size = new System.Drawing.Size(63, 67);
+            this.btSelecionarImagemPerfil.Size = new System.Drawing.Size(192, 46);
             this.btSelecionarImagemPerfil.TabIndex = 7;
-            this.btSelecionarImagemPerfil.Text = "Escolha uma imagem";
-            this.btSelecionarImagemPerfil.UseVisualStyleBackColor = true;
+            this.btSelecionarImagemPerfil.UseVisualStyleBackColor = false;
             this.btSelecionarImagemPerfil.Click += new System.EventHandler(this.btSelecionarImagemPerfil_Click);
             // 
             // TelaCadastroComplementar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.btSelecionarImagemPerfil);
             this.Controls.Add(this.btCadastrar);
             this.Controls.Add(this.boxFotoPerfil);
             this.Controls.Add(this.txtBiografia);
             this.Controls.Add(this.txtNickname);
-            this.Controls.Add(this.lblBiografia);
-            this.Controls.Add(this.lblFotoPerfil);
-            this.Controls.Add(this.lblNickname);
+            this.MaximizeBox = false;
             this.Name = "TelaCadastroComplementar";
             this.Text = "TelaCadastroComplementar";
             ((System.ComponentModel.ISupportInitialize)(this.boxFotoPerfil)).EndInit();

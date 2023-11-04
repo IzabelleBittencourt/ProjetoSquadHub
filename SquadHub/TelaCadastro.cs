@@ -39,6 +39,7 @@ namespace SquadHub
             DateTime dataNascimento = dataNascimentoPicker.Value;
             DateTime dataAtual = DateTime.Now;
 
+
             int idade = dataAtual.Year - dataNascimento.Year;
             if (dataNascimento > dataAtual.AddYears(-idade))
             {

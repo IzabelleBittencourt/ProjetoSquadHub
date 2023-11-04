@@ -80,5 +80,10 @@ namespace SquadHub
                 MessageBox.Show("Por favor, selecione uma imagem e insira uma legenda antes de publicar.");
             }
         }
+
+        private void TelaNovaPublicacao_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

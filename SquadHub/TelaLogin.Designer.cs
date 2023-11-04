@@ -29,9 +29,8 @@ namespace SquadHub
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TelaLogin));
             this.btTelaCad = new System.Windows.Forms.Button();
-            this.lblEmailLogin = new System.Windows.Forms.Label();
-            this.lblSenhaLogin = new System.Windows.Forms.Label();
             this.txtEmailLogin = new System.Windows.Forms.TextBox();
             this.txtSenhaLogin = new System.Windows.Forms.TextBox();
             this.btEntrar = new System.Windows.Forms.Button();
@@ -40,79 +39,83 @@ namespace SquadHub
             // 
             // btTelaCad
             // 
-            this.btTelaCad.Location = new System.Drawing.Point(134, 296);
+            this.btTelaCad.BackColor = System.Drawing.Color.Transparent;
+            this.btTelaCad.FlatAppearance.BorderSize = 0;
+            this.btTelaCad.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btTelaCad.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btTelaCad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btTelaCad.Location = new System.Drawing.Point(495, 801);
             this.btTelaCad.Name = "btTelaCad";
-            this.btTelaCad.Size = new System.Drawing.Size(173, 53);
+            this.btTelaCad.Size = new System.Drawing.Size(343, 22);
             this.btTelaCad.TabIndex = 0;
-            this.btTelaCad.Text = "Novo Usuário";
-            this.btTelaCad.UseVisualStyleBackColor = true;
+            this.btTelaCad.UseVisualStyleBackColor = false;
             this.btTelaCad.Click += new System.EventHandler(this.btTelaCad_Click);
-            // 
-            // lblEmailLogin
-            // 
-            this.lblEmailLogin.AutoSize = true;
-            this.lblEmailLogin.Location = new System.Drawing.Point(166, 86);
-            this.lblEmailLogin.Name = "lblEmailLogin";
-            this.lblEmailLogin.Size = new System.Drawing.Size(39, 15);
-            this.lblEmailLogin.TabIndex = 1;
-            this.lblEmailLogin.Text = "Email:";
-            // 
-            // lblSenhaLogin
-            // 
-            this.lblSenhaLogin.AutoSize = true;
-            this.lblSenhaLogin.Location = new System.Drawing.Point(166, 136);
-            this.lblSenhaLogin.Name = "lblSenhaLogin";
-            this.lblSenhaLogin.Size = new System.Drawing.Size(42, 15);
-            this.lblSenhaLogin.TabIndex = 2;
-            this.lblSenhaLogin.Text = "Senha:";
             // 
             // txtEmailLogin
             // 
-            this.txtEmailLogin.Location = new System.Drawing.Point(269, 83);
+            this.txtEmailLogin.BackColor = System.Drawing.Color.MediumOrchid;
+            this.txtEmailLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtEmailLogin.Font = new System.Drawing.Font("Segoe UI", 34F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtEmailLogin.ForeColor = System.Drawing.Color.White;
+            this.txtEmailLogin.Location = new System.Drawing.Point(774, 512);
             this.txtEmailLogin.Name = "txtEmailLogin";
-            this.txtEmailLogin.Size = new System.Drawing.Size(142, 23);
+            this.txtEmailLogin.Size = new System.Drawing.Size(660, 68);
             this.txtEmailLogin.TabIndex = 3;
             // 
             // txtSenhaLogin
             // 
-            this.txtSenhaLogin.Location = new System.Drawing.Point(269, 133);
+            this.txtSenhaLogin.BackColor = System.Drawing.Color.MediumOrchid;
+            this.txtSenhaLogin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtSenhaLogin.Font = new System.Drawing.Font("Segoe UI", 34F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtSenhaLogin.ForeColor = System.Drawing.Color.White;
+            this.txtSenhaLogin.Location = new System.Drawing.Point(774, 608);
             this.txtSenhaLogin.Name = "txtSenhaLogin";
-            this.txtSenhaLogin.Size = new System.Drawing.Size(142, 23);
+            this.txtSenhaLogin.Size = new System.Drawing.Size(660, 68);
             this.txtSenhaLogin.TabIndex = 4;
             this.txtSenhaLogin.UseSystemPasswordChar = true;
             // 
             // btEntrar
             // 
-            this.btEntrar.Location = new System.Drawing.Point(442, 296);
+            this.btEntrar.BackColor = System.Drawing.Color.Transparent;
+            this.btEntrar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btEntrar.FlatAppearance.BorderSize = 0;
+            this.btEntrar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btEntrar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btEntrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btEntrar.Location = new System.Drawing.Point(1146, 784);
             this.btEntrar.Name = "btEntrar";
-            this.btEntrar.Size = new System.Drawing.Size(187, 53);
+            this.btEntrar.Size = new System.Drawing.Size(277, 57);
             this.btEntrar.TabIndex = 5;
-            this.btEntrar.Text = "Entrar";
-            this.btEntrar.UseVisualStyleBackColor = true;
+            this.btEntrar.UseVisualStyleBackColor = false;
             this.btEntrar.Click += new System.EventHandler(this.btEntrar_Click);
             // 
             // btMostrarSenhaLogin
             // 
-            this.btMostrarSenhaLogin.Location = new System.Drawing.Point(427, 129);
+            this.btMostrarSenhaLogin.BackColor = System.Drawing.Color.Transparent;
+            this.btMostrarSenhaLogin.FlatAppearance.BorderSize = 0;
+            this.btMostrarSenhaLogin.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.btMostrarSenhaLogin.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.btMostrarSenhaLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btMostrarSenhaLogin.Location = new System.Drawing.Point(1453, 627);
             this.btMostrarSenhaLogin.Name = "btMostrarSenhaLogin";
-            this.btMostrarSenhaLogin.Size = new System.Drawing.Size(32, 29);
+            this.btMostrarSenhaLogin.Size = new System.Drawing.Size(43, 30);
             this.btMostrarSenhaLogin.TabIndex = 18;
-            this.btMostrarSenhaLogin.Text = "Ver";
-            this.btMostrarSenhaLogin.UseVisualStyleBackColor = true;
+            this.btMostrarSenhaLogin.UseVisualStyleBackColor = false;
             this.btMostrarSenhaLogin.Click += new System.EventHandler(this.btMostrarSenhaLogin_Click);
             // 
             // TelaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.btMostrarSenhaLogin);
             this.Controls.Add(this.btEntrar);
             this.Controls.Add(this.txtSenhaLogin);
             this.Controls.Add(this.txtEmailLogin);
-            this.Controls.Add(this.lblSenhaLogin);
-            this.Controls.Add(this.lblEmailLogin);
             this.Controls.Add(this.btTelaCad);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "TelaLogin";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.TelaLogin_Load);
@@ -124,8 +127,6 @@ namespace SquadHub
         #endregion
 
         private System.Windows.Forms.Button btTelaCad;
-        private System.Windows.Forms.Label lblEmailLogin;
-        private System.Windows.Forms.Label lblSenhaLogin;
         private System.Windows.Forms.TextBox txtEmailLogin;
         private System.Windows.Forms.TextBox txtSenhaLogin;
         private System.Windows.Forms.Button btEntrar;
